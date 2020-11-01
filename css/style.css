@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}   
+
+body {
+    font-family: 'lato' , sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1 {
+    color: #F0991C;
+    
+}
+
+
+p {
+    margin: 10px;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 20px;
+}
+
+
+.navbar {
+    background-color:#333;
+    color: #F0991C;
+    height: 130px;
+    border-bottom: solid #F0991C;
+    border-width: 2px;     
+}
+
+.navbar .navbar h1 {
+    margin: 50px;
+}
+
+.navbar ul {
+    float: right;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    border-width: 3px;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 10px;
+    display: flex;
+    border: solid #F0991C;
+    padding: 10px;    
+} 
+
+
+.navbar a:hover {
+
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.fa {
+    justify-content: space-between;
+    margin-left: -50%;
+}
+
+
+.searchTerm { 
+  margin-left: -50%;
+  width: 350px;
+  border: 5px solid #F0991C;
+  border-right: none;
+  padding: 5px;
+  height: 50px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #333;
+}
+
+
+.searchButton {
+  margin-left: auto;
+  width: 70px;
+  position: absolute;
+  height: 50px;
+  border: 1px solid #F0991C;
+  background: #F0991C;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+/* games frontpage */
+
+.games {
+    padding-top: 100px;
+    position: relative;
+}
+
+.one {
+    align-content: space-between;
+} 
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+    align-content: space-between;
+}
+
+.card {
+    background-color: #ffab23;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0 ,0 ,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}    
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    display: flex;
+    overflow: hidden;
+}
+  
+.showcase {
+    height: 300px;
+    position: relative;
+    align-content: flex;
+    background-color: #333;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase p {
+    margin: 20px 0;
+    color: #ffab23;
+}
+
+.showcase .gamepage:hover {
+    background-color:#fff;
+}
+
+.showcase .grid {
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 250px;
+    width: 400px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+    margin: 5px 0;
+}
+
+.showcase-form input[type='text'],  
+.showcase-form input[type='email'] {
+    background-color: #ffab23;
+    border: 0;   
+    border-bottom: 1px solid #333;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus {
+    outline: none;
+}
+
+.text-center {
+    text-align: center;
+}
+.games-heading {
+    max-width: 500px;
+    margin: auto;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+    border-bottom: solid #333;
+    border-radius: 30px;
+}
+
+.games h4 {
+    font-size: 30px;
+    margin: auto;
+    font-weight: lighter;
+    border-bottom: solid#333;
+    border-width: 4px;
+}
+
+.games .grid h3 {    
+    height: 200px;
+    margin: 100px;
+}
+
+.games .grid p {
+    font-size: 20px;
+    font-weight: lighter;
+    border-bottom: solid #333;
+    border-width: 2px;
+    margin: 5px;
+}
+
+
+.my-4 {
+    margin: 100px;
+}
+
+.games-prices {
+    margin: 5px;
+}
+
+.myButton {
+    position: relative;
+	background:linear-gradient(to bottom, #ffab23 5%, #ffab23 100%);
+	background-color:#ffab23;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+/* footer */
+
+.footer {
+    background-color: #333;
+    height: 170px;
+}
+
+.footer .social a {
+    margin: 0 10px;
+    color: #fff;
+}
+
+.footer h6 {
+    color: #F0991C;  
+    font-size: 22px;
+    border-bottom:solid#F0991C;
+    border-bottom-width: 2px;
+}
+
+.footer a {
+    margin: 5px 5px;
+    margin-bottom: 10px;
+    color: #FffC;
+}
+
+.footer p {
+   font-size: 10px;
+   color: #FffC; 
+}
+
+.footer h5 {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin-left: 55px;
+}
+
+/* Side nr2 Searchresults */
+
+.searchresults-heading {
+    max-width: 500px;
+    margin: auto;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: -20px;
+    border-bottom: solid #333;
+    border-radius: 30px;
+}
+
+.searchresults h4 {
+    padding: 50px;
+    font-size: 40px;
+    margin: auto;
+    font-weight: lighter;
+    border-bottom: solid#333;
+    border-width: 4px;
+}
+
+.searchresults .grid h3 {    
+    height: 200px;
+    margin: 100px;
+}
+
+.searchresults .grid p {
+    font-size: 20px;
+    font-weight: lighter;
+    border-bottom: solid #333;
+    border-width: 2px;
+    margin: 5px;
+}
+
+.my-4 {
+    margin: 100px;
+}
+
+.searchresults-prices {
+    margin: 5px;
+}
+
+
+
+/* Game Page */
+
+.gamepage {
+  margin: 50px 50px;
+  border: solid#333;
+  border-radius:  20px 20px 20px 20px;
+  padding-top:  20px;
+  padding-bottom: 30px;
+  align-content: flex-start;
+  display: inline-block;
+}
+
+.gamepage h1 {
+    color: #333;
+    font-size: 50px;
+    margin-left: -450px;
+}
+
+.gamepage h2 {
+    margin-top: ;
+    font-weight: lighter;
+    margin-left: -450px;
+}
+
+.gamepage img {
+    height: 400px;
+    justify-self: flex-start;
+}
+
+.gamepage .myButton {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.gamepage .prices {
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+.zelda1 {
+    height: 50px;
+    width: 50px;  
+}
+
+
+.gamepage .zelda2 {
+    height: 250px;
+    float: right;
+    margin-top: -270px;
+}
+.gamepage .zelda3 {
+    height: 250px;
+    float: right;
+    margin-bottom: 10px;
+    align-content: space-between;
+}
+
+/* checkout page */ 
+
+.checkout .grid {
+    grid-template-columns: 50% 50%;
+}
+
+
+.checkout-form {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 500px;
+    width: 500px;
+}
+
+.checkout-form input[type='text'],  
+.checkout-form input[type='email'] {
+    background-color: #fff;   
+    border-bottom: 1px solid #333;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.checkout-form p {
+    margin: 2px;
+}
+
+.checkoutimg {
+    height: 200px;
+    margin: 15px 10px;
+}
+
+.cart-form {
+    background-color: #F0991C;
+}
+
+.carttext {
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+    margin-left: 170px;
+}
+
+.total {
+    font-size: 30px;
+    margin-left: 160px;
+    border-bottom: solid#333;
+}
+
+.imagetext {
+    padding-left: 300px;
+}
+
+.checkout .btn {
+    margin: 5px 5px;
+}
+
+
+/* Account Page */
+
+.account-page .myButton > p {
+    font-size: 20px;
+}
+
+.account-page .grid {
+    grid-template-columns: 20%;
+    text-align: center;
+    display: inline block;
+    overflow: hidden;
+}
+
+.account-form {
+    max-width: 500px;
+    position: absolute;
+}
+ 
+.account-page {
+    margin: 150px 150px;
+    border: solid#333;
+    padding: 100px;
+    border-radius: 20px;
+    border-width: 5px;
+    background-color: #333;
+   
+}
+
+
+/* Contact page */ 
+
+.container-grid {
+    margin: 100px;
+}
+
+.contact-form {
+    height: 450px;
+    display: inline-block;
+}
+
+
+.contact-text {
+    margin-top: 15px;
+    padding: 50px;
+    width: 70%;
+}
+
+.contact .btn {
+    margin: 10px;
+}
+
+
+/* Tablets and under */
+
+@media(max-width: 768) {
+    .grid,
+    .showcase .grid,
+    .games .grid, {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase {
+        height: auto;
+    }
+
+    .showcase-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .showcase-form {
+        justify-self: center;
+        margin: auto;
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width: 500px) {
+    .navbar {
+        height: 200px;
+    }
+    .navbar .flex {
+        flex-direction: column;
+    }
+    .navbar ul {
+        padding: 10px;    
+    }
+}
